@@ -22,6 +22,13 @@ public class App {
 
         Animal dog = new Animal();
         dog.name = "Azorel";
+        dog.age = 1;
+        dog.favoriteFood = "granules";
+        dog.happinessLevel = 10;
+        dog.favoriteRecreationalActivity = "run";
+        dog.hungerLevel = 0;
+
+
 
         AnimalFood granules = new AnimalFood();
         granules.name = "Pedigree";
