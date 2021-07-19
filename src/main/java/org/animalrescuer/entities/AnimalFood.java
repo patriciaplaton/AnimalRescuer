@@ -1,4 +1,4 @@
-package org.animalrescuer;
+package org.animalrescuer.entities;
 
 import java.time.LocalDate;
 

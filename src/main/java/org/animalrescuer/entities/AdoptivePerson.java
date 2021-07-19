@@ -1,4 +1,4 @@
-package org.animalrescuer;
+package org.animalrescuer.entities;
 
 public class AdoptivePerson {
 
