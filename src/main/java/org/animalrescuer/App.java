@@ -45,8 +45,7 @@ public class App {
         dog.sterilization = true;
         dog.color = "brown";
         dog.size = "medium";
-
-
+        dog.medicalInterventions.add(new MedicalIntervention("routineControl", "vaccination", true, new Date()));
 
 
         AnimalFood granules = new AnimalFood();
