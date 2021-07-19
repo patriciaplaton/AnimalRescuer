@@ -10,4 +10,9 @@ public class AnimalFood {
     public int amount;
     public Date date;
     public boolean availabilityInStock;
+    public String type;
+    public String flavor;
+    public String color;
+    public Boolean vegeterian;
+
 }
