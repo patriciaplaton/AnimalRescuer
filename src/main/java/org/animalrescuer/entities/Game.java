@@ -2,9 +2,9 @@ package org.animalrescuer.entities;
 
 public class Game {
 
-    AdoptivePerson adoptivePerson;
-    Animal animal;
-    Veterinarian veterinarian;
+    public AdoptivePerson adoptivePerson;
+    public Animal animal;
+    public Veterinarian veterinarian;
 
 
 
