@@ -2,7 +2,7 @@ package org.animalrescuer.entities;
 
 import java.awt.print.Pageable;
 
-public class AdoptivePerson {
+public class AdoptivePerson  {
 
     public String name;
     public double moneyAmount;
