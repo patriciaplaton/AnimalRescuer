@@ -5,11 +5,13 @@ import java.util.Date;
 
 public class AnimalFood {
 
-    public String name;
-    public double price;
+
+
+    public String name;  // mandatory
+    public double price;  // mandatory
     public int amount;
     public Date date;
-    public boolean availabilityInStock;
+    public boolean availabilityInStock;  // mandatory
     public String type;
     public String flavor;
     public String color;

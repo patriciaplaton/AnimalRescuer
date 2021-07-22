@@ -8,7 +8,7 @@ public class App {
 
     public static void main(String[] args) {
        // Race race = new Race();
-        AdoptivePerson patriciaPlaton = new AdoptivePerson();
+        AdoptivePerson patriciaPlaton = new AdoptivePerson("patriciaPlaton", 10.6587, 26,true);
         patriciaPlaton.name = "patriciaPlaton";
         patriciaPlaton.moneyAmount = 10.6587;
         patriciaPlaton.favoriteHobby = "hiking";

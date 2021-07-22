@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Animal  {
 
-    public String name;
-    public int age;
+    public String name;  // mandatory
+    public int age;  // mandatory
     public int healthLevel;
     public int hungerLevel;
     public int happinessLevel;
@@ -15,7 +15,7 @@ public class Animal  {
     public String favoriteRecreationalActivity;
     public String color;
     public String breed;
-    public String size;
+    public String size;  // mandatory
     public boolean sterilization;
     public List<MedicalIntervention> medicalInterventions = new ArrayList<>();
 

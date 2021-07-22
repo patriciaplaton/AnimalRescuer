@@ -4,8 +4,8 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class MedicalIntervention {
-    public String name;
-    public String type;
+    public String name;  // mandatory
+    public String type;  // mandatory
     public boolean surgery;
     public Date date;
 
