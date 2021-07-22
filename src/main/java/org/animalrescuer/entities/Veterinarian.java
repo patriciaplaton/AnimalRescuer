@@ -9,4 +9,8 @@ public class Veterinarian {
     public boolean facultyCompleted;
     public GenderType gender;
 
+    public Veterinarian (String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }

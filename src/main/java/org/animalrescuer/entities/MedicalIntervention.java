@@ -9,6 +9,11 @@ public class MedicalIntervention {
     public boolean surgery;
     public Date date;
 
+    public MedicalIntervention (String name, String type){
+        this.name = name;
+        this.type = type;
+    }
+
     public MedicalIntervention(String name, String type, boolean surgery, Date date) {
         this.name = name;
         this.type = type;

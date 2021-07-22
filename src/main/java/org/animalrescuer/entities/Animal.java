@@ -20,7 +20,12 @@ public class Animal  {
     public List<MedicalIntervention> medicalInterventions = new ArrayList<>();
 
 
+    public Animal (String name, int age, String size) {
+        this.name =name;
+        this.age = age;
+        this.size = size;
 
+    }
 
 
 }

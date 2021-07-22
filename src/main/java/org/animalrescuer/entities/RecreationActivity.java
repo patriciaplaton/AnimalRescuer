@@ -1,5 +1,7 @@
 package org.animalrescuer.entities;
 
+import java.net.PortUnreachableException;
+
 public class RecreationActivity {
 
    public String name;  // mandatory
@@ -7,4 +9,15 @@ public class RecreationActivity {
    public String activityOutside;
    public boolean camping;
    public String favoriteToy;  // mandatory
+
+   public RecreationActivity (String name,String favoriteToy) {
+      this.name = name;
+      this.favoriteToy = favoriteToy;
+
+   }
 }
+
+
+
+
+

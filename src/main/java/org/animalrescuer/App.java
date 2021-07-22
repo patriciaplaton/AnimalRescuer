@@ -16,25 +16,43 @@ public class App {
         patriciaPlaton.hasBigHeart = true;
         patriciaPlaton.homeType = "house";
 
-        Veterinarian denisaDuma = new Veterinarian();
-        denisaDuma.name = "denisaDuma";
-        denisaDuma.medicalSpecialty = "veterinarian";
-        denisaDuma.age = 22;
-        denisaDuma.gender = GenderType.FEMALE;
-        denisaDuma.address = "Cluj-Napoca";
-        denisaDuma.facultyCompleted = true;
+        String vasile = "suparata";
+        int age = 3;
+
+        AdoptivePerson georgePlaton = new AdoptivePerson(vasile,1.2, age,false);
+
+        Animal azorel = new Animal("azorel",2,"medium");
+        Animal fuwa = new Animal("fuwa",1,"small");
+
+        Game hide = new Game (patriciaPlaton, azorel);
+        Game run = new Game(georgePlaton, fuwa);
+
+        MedicalIntervention vaccination = new MedicalIntervention("intervention","vaccination");
+        RecreationActivity running = new RecreationActivity("running", "sheepy");
+        Veterinarian denisaDuma = new Veterinarian("denisaDuma",22);
+        AnimalFood granules = new AnimalFood("granules", 23.89,true);
 
 
 
-        RecreationActivity run = new RecreationActivity();
-        run.name = "run";
-        run.activityInside = "puzzle";
-        run.activityOutside = "swimming";
-        run.favoriteToy = "Sheepy";
-        run.camping = true;
+        Veterinarian deni = new Veterinarian("deni",22);
+        deni.name = "deni";
+        deni.medicalSpecialty = "veterinarian";
+        deni.age = 22;
+        deni.gender = GenderType.FEMALE;
+        deni.address = "Cluj-Napoca";
+        deni.facultyCompleted = true;
 
 
-        Animal dog = new Animal();
+
+        RecreationActivity jogging = new RecreationActivity("run","sheepy");
+        jogging.name = "run";
+        jogging.activityInside = "puzzle";
+        jogging.activityOutside = "swimming";
+        jogging.favoriteToy = "Sheepy";
+        jogging.camping = true;
+
+
+        Animal dog = new Animal("azorel",1,"medium");
         dog.name = "Azorel";
         dog.age = 1;
         dog.favoriteFood = "granules";
@@ -48,19 +66,20 @@ public class App {
         dog.medicalInterventions.add(new MedicalIntervention("routineControl", "vaccination", true, new Date()));
 
 
-        AnimalFood granules = new AnimalFood();
-        granules.name = "Pedigree";
-        granules.price = 10;
-        granules.amount = 500;
-        granules.date = new Date();
-        granules.availabilityInStock = true;
-        granules.vegeterian = false;
-        granules.type = "beta";
-        granules.flavor = "duck";
+        AnimalFood pizza = new AnimalFood("pizza", 23.3232, true);
+        pizza.name = "Pedigree";
+        pizza.price = 10;
+        pizza.amount = 500;
+        pizza.date = new Date();
+        pizza.availabilityInStock = true;
+        pizza.vegeterian = false;
+        pizza.type = "beta";
+        pizza.flavor = "duck";
 
-        Game animalRescuer = new Game();
+        Game animalRescuer = new Game(hide.adoptivePerson, hide.animal);
         animalRescuer.adoptivePerson = patriciaPlaton;
         animalRescuer.animal = dog;
         animalRescuer.veterinarian = denisaDuma;
+
     }
 }

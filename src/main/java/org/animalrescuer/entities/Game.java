@@ -6,7 +6,10 @@ public class Game {
     public Animal animal;  // mandatory
     public Veterinarian veterinarian;
 
-
+    public Game (AdoptivePerson adoptivePerson, Animal animal) {
+        this.adoptivePerson = adoptivePerson;
+        this.animal = animal;
+    }
 
 
 }

@@ -4,9 +4,6 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class AnimalFood {
-
-
-
     public String name;  // mandatory
     public double price;  // mandatory
     public int amount;
@@ -16,5 +13,12 @@ public class AnimalFood {
     public String flavor;
     public String color;
     public Boolean vegeterian;
+
+    public AnimalFood (String name, double price, boolean availabilityInStock) {
+        this.name = name;
+        this.price = price;
+        this.availabilityInStock =availabilityInStock;
+
+    }
 
 }
